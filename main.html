@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Inspection</title>
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+</head>
+
+<body>
+    <img id="logo" src="images/logo.jpg" alt="Company Logo">
+    <div class="container">
+        <div class="video-container" id="video-container">
+            <h2>Live Stream</h2>
+            <iframe src="http://192.168.0.100:8080/video" alt="Live Stream" id="live-stream"></iframe>
+        </div>
+        <div class="control-panel">
+            <div class="sensor-container">
+                <h2>Sensor Readings</h2>
+                <table id="sensor-table">
+                    <thead>
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Temperature</td>
+                            <td id="temp-reading">--</td>
+                        </tr>
+                        <tr>
+                            <td>Pressure</td>
+                            <td id="pressure-reading">--</td>
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+                            <td id="humidity-reading">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map-container">
+                <h2>Robot Path</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
