@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #06386B;
     color: #333;
     display: flex;
     justify-content: center;
@@ -12,12 +12,12 @@ body {
 }
 
 #logo {
-    width: 150px;
+    width: 100px;
     height: auto;
     top: 0;
-    margin: 20px auto;
+    margin: 20px 70px;
     position: absolute;
-    border: 5px solid #06386B;;
+    border: 5px solid #06386B;
     border-radius: 50%;
     left: 20px;
 }
@@ -111,9 +111,10 @@ table th {
 
 @media (max-width: 768px) {
     #logo {
-        width: 80px; 
+        width: 30px; 
+        height:30px;
+        border: 3px solid #06386B;
         margin: 10px;
-        position: relative;
     }
 }
 
