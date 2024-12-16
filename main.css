@@ -108,3 +108,12 @@ table th {
         margin: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    #logo {
+        width: 80px; 
+        margin: 10px;
+        position: relative;
+    }
+}
+
